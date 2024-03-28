@@ -1,0 +1,156 @@
+/* Default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: url("/college assignment/image/background.jpg") no-repeat center center fixed;
+    background-size: cover;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+#logo {
+    height: 150px;
+    width: 300px;
+    background-image: url("/college assignment/image/eat\ well\ and\ educate.png");
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    padding-bottom: 150px; 
+}
+
+.title {
+    color: green;
+    font-size: 36px;
+    margin: 20px 0;
+}
+
+.form {
+    margin-bottom: 20px;
+}
+
+.input-box {
+    display: flex;
+    align-items: center;
+    border-bottom: 2px solid purple;
+    margin: 10px 0;
+}
+
+.input-box i {
+    width: 25px;
+}
+
+.input-box input {
+    flex: 1;
+    background: none;
+    border: none;
+    outline: none;
+    color: black;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+.btn {
+    color: black;
+    cursor: pointer;
+    outline: none;
+    margin-top: 20px;
+    padding: 10px 20px;
+    border: 2px solid brown;
+    border-radius: 5px;
+    background: none;
+    font-size: 16px;
+    font-weight: bold;
+    transition: color 0.5s ease, background-color 0.5s ease;
+}
+
+.btn:hover {
+    color: purple;
+    background: greenyellow;
+}
+
+.signup h2 {
+    cursor: pointer;
+    border: 2px solid brown;
+    border-radius: 35px;
+    display: inline-block;
+    padding: 10px 20px;
+    transition: color 0.5s ease, background-color 0.5s ease;
+}
+
+.signup h2:hover {
+    background-color: greenyellow;
+    color: purple;
+}
+
+/* Media Queries for Responsive Design */
+
+/* Tablet */
+@media screen and (max-width: 768px) {
+    #logo {
+        height: 120px;
+        width: 240px;
+        padding-bottom: 120px;
+    }
+
+    .title {
+        font-size: 28px;
+    }
+
+    .input-box {
+        margin: 8px 0;
+    }
+
+    .input-box input {
+        font-size: 14px;
+    }
+
+    .btn {
+        padding: 8px 16px;
+    }
+
+    .signup h2 {
+        padding: 8px 16px;
+    }
+}
+
+/* Mobile */
+@media screen and (max-width: 480px) {
+    #logo {
+        height: 100px;
+        width: 200px;
+        padding-bottom: 100px;
+    }
+
+    .title {
+        font-size: 24px;
+    }
+
+    .input-box {
+        margin: 6px 0;
+    }
+
+    .input-box input {
+        font-size: 12px;
+    }
+
+    .btn {
+        padding: 6px 12px;
+    }
+
+    .signup h2 {
+        padding: 6px 12px;
+    }
+}

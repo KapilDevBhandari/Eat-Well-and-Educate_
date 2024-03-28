@@ -1,0 +1,159 @@
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #efe1e1;
+}
+
+header {
+    background-color: greenyellow;
+    padding: 20px;
+    text-align: center;
+    color: #333;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    display: inline;
+    margin-right: 10px;
+}
+
+nav a {
+    text-decoration: none;
+    color: inherit;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #ff6600; /* Orange color on hover */
+}
+
+main {
+    padding: 20px;
+    background-color: #fff;
+    border-left: 1px solid #0ede50;
+    border-right: 1px solid #ddd;
+}
+
+section {
+    margin-bottom: 20px;
+}
+
+h1, h2, h3 {
+    color: #090801;
+}
+
+/* Recipe card styles */
+.recipe-card-1 {
+    background-color: #dce265fa;
+    border-radius: 50px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.recipe-card-2 {
+    background-color: #dce265fa;
+    border-radius: 50px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.recipe-card-3 {
+    background-color: #dce265fa;
+    border-radius: 50px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+#potato{
+   width: 50%px;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    width: 300px
+}
+.recipe-card h3 {
+    margin-top: 0;
+    color: #333;
+}
+
+.recipe-card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+.recipe-card p, .recipe-card ul, .recipe-card ol {
+    margin-bottom: 15px;
+}
+
+.recipe-card ul, .recipe-card ol {
+    padding-left: 20px;
+}
+
+.recipe-card a {
+    color: #333;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.recipe-card a:hover {
+    color: #ff6600; /* Orange color on hover */
+}
+
+/* Media Queries for Tablet */
+@media (max-width: 768px) {
+    nav li {
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    header {
+        padding: 15px;
+    }
+
+    main {
+        padding: 15px;
+    }
+
+    .recipe-card {
+        padding: 15px;
+    }
+}
+
+/* Media Queries for Mobile */
+@media (max-width: 480px) {
+    nav li {
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    header {
+        padding: 15px;
+    }
+
+    main {
+        padding: 10px;
+    }
+
+    .recipe-card {
+        padding: 10px;
+    }
+
+    .recipe-card img {
+        margin-bottom: 10px;
+    }
+
+    .recipe-card p, .recipe-card ul, .recipe-card ol {
+        margin-bottom: 10px;
+    }
+}
